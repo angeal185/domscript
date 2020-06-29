@@ -1,6 +1,5 @@
 
-#### A lightning fast dom query and manipulation lib
-#### for when speed matters.
+#### A lightning fast dom query and manipulation lib for when speed matters.
 
 ![cd-img] ![dep-img] ![sz-img]
 
@@ -412,7 +411,7 @@ console.log(
 - [index](#documentation)
 
 # child
-get an element attribute/s
+get an element child/ren
 
 examples:
 ```js
@@ -428,8 +427,8 @@ d.id('test-id').child().each(function(ele, idx){
 // return child element by index
 d.id('test-id').child(0).r
 
-// return child element by index and edit text
-d.id('test-id').child(0).txt('new text')
+// return child element by index and return textContent
+d.id('test-id').child(0).txt()
 
 // return child element by index and edit textContent
 d.id('test-id').child(0).txt('new text')
@@ -705,10 +704,10 @@ add or return textContent
 examples:
 ```js
 
-// return innerHTML of element
+// return textContent of element
 d.id('test-id').txt()
 
-// replace or add innerHTML of element
+// replace or add textContent of element
 d.id('test-id').txt('new text');
 
 ```
