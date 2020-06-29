@@ -53,6 +53,9 @@
 Domscript is a lightning fast dom query/manipulation tool that you can easily
 customize to suit your needs.
 
+The goal of domscript is to enable developers to rapidly chain
+methods while achieving similar to vanilla js speed.
+
 * all prototype methods are optional
 * custom methods can be easily be built into the prototype chain
 * current maximum build size of 2.6kb minified
