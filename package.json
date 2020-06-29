@@ -1,0 +1,24 @@
+{
+  "name": "domscript",
+  "version": "1.0.0",
+  "description": "A lightning fast dom query and manipulation lib for when speed matters",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node ./build/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angeal185/domscript.git"
+  },
+  "keywords": [],
+  "author": "ben eaves",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/angeal185/domscript/issues"
+  },
+  "homepage": "https://github.com/angeal185/domscript#readme"
+}
