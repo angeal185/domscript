@@ -67,6 +67,10 @@ customize to suit your needs.
 The goal of domscript is to enable developers to rapidly chain
 methods while achieving similar to vanilla js speed.
 
+if you can query and manipulate the dom with javascript, you can already use domscript.
+
+you should get the same results and errors as though you were writting vanilla js.
+
 * all prototype methods are optional
 * custom methods can be easily be built into the prototype chain
 * current maximum build size of 2.6kb minified
@@ -177,7 +181,9 @@ console.timeEnd('domscript');
 ```
 
 your end results should always have domscript running similar speed
-to native js
+to native js. the lower the amount of methods included in the domscript prototype,
+the faster closer it should be. if you don't use it, exclude it.
+
 - [index](#documentation)
 
 # id
