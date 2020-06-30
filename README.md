@@ -84,7 +84,7 @@ npm
 stable release
 
 ```sh
-$ npm install domscript --save
+$ npm install dom-script --save
 ```
 
 dev release
