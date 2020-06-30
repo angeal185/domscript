@@ -15,9 +15,11 @@
     "name": true,
     "addClass": true,
     "rmClass": true,
+    "tgClass": true,
     "hasClass": true,
     "attr": true,
     "rmAttr": true,
+    "tgAttr": true,
     "getAttr": true,
     "child": true,
     "parent": true,
@@ -36,10 +38,16 @@
     "html": true,
     "txt": true,
     "each": true,
+    "filter": true,
     "on": true,
     "off": true,
     "addEvt": true,
     "rmEvt": true,
-    "css": true
+    "css": true,
+    "click": true,
+    "submit": true,
+    "focus": true,
+    "blur": true,
+    "cb": true
   }
 }

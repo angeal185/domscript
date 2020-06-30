@@ -20,9 +20,11 @@
 - [name](#name)
 - [addClass](#addClass)
 - [rmClass](#rmClass)
+- [tgClass](#rmClass)
 - [hasClass](#hasClass)
 - [attr](#attr)
 - [rmAttr](#rmAttr)
+- [tgAttr](#rmAttr)
 - [getAttr](#getAttr)
 - [child](#child)
 - [parent](#parent)
@@ -41,12 +43,18 @@
 - [html](#html)
 - [txt](#txt)
 - [each](#each)
+- [filter](#filter)
+- [eq](#eq)
 - [on](#on)
 - [off](#off)
 - [addEvt](#addEvt)
 - [rmEvt](#rmEvt)
 - [create](#create)
 - [css](#css)
+- [click](#click)
+- [submit](#submit)
+- [focus](#focus)
+- [blur](#blur)
 
 # about
 
@@ -343,6 +351,19 @@ d.id('test-id').rmClass('class1','class2','class3');
 ```
 - [index](#documentation)
 
+# tgClass
+toggle class of element
+
+examples:
+```js
+
+// remove/add class
+d.id('test-id').tgClass('class1');
+
+
+```
+- [index](#documentation)
+
 # hasClass
 check if class exists
 
@@ -388,6 +409,21 @@ d.id('some-input').rmAttr('type');
 
 // remove multiple attributes
 d.id('some-input').rmAttr('type', 'placeHolder');
+
+```
+- [index](#documentation)
+
+# tgAttr
+toggle attribute/s
+
+examples:
+```js
+
+// add/remove an attribute
+d.id('some-input').tgAttr('readonly');
+
+// force add/remove an attribute
+d.id('some-input').tgAttr('readonly', true);
 
 ```
 - [index](#documentation)
@@ -475,7 +511,7 @@ examples:
 let item = d.create('div').r;
 
 // insert elements and text after querySelected element
-d.qs('#test-id')
+d.id('test-id')
 .after(item.cloneNode(),item.cloneNode(), 'after')
 .before(item.cloneNode(),item.cloneNode(), 'before')
 
@@ -738,6 +774,27 @@ d.qsa('.test-class p').each(function(ele, idx){
 ```
 - [index](#documentation)
 
+# filter
+return filtered items
+
+examples:
+```js
+
+// filter HTMLCollection
+d.class('class1').filter(function(ele, idx){
+  return ele.id !== 'id3';
+}).each(function(ele, idx){
+  ele.textContent = 'ok';
+})
+
+d.class('class1').filter(function(ele, idx){
+  return ele.id !== 'id3';
+}).r[0]
+
+
+```
+- [index](#documentation)
+
 # on
 attach single on* event to element
 
@@ -858,10 +915,104 @@ d.id('test-id').css({
 ```
 - [index](#documentation)
 
+# click
+click an element
+
+examples:
+```js
+
+// get element by selector and add single style
+d.id('some-button').click();
+```
+- [index](#documentation)
+
+# submit
+submit a form
+
+examples:
+```js
+
+// get element by selector and add single style
+d.id('some-form').submit();
+
+```
+- [index](#documentation)
+
+# focus
+focus an element
+
+examples:
+```js
+
+//focus an element
+d.id('some-input').focus();
+
+d.id('some-input').focus().attr('type','text');
+
+d.id('some-input').attr({
+  placeHolder: 'test focus',
+  type: 'text'
+}).focus()
+
+d.id('some-input').on('focus', function(evt){
+  console.log('focus event')
+}).focus();
+
+```
+- [index](#documentation)
+
+# blur
+blur an element
+
+examples:
+```js
+
+//blur a focused element
+d.id('some-input').focus();
+
+d.id('some-input').on('blur', function(evt){
+  console.log('blur event')
+}).focus().blur();
+
+```
+- [index](#documentation)
+
+# cb
+add callback to an item containing current proto state
+
+examples:
+```js
+
+// return element within callback function
+d.id('some-element').cb(function(ele){
+  if(ele){
+    d.set(ele).attr('readonly', true)
+  }
+})
+
+```
+- [index](#documentation)
+
+# set
+set the current proto state
+
+examples:
+```js
+
+// cached reference
+let cached_item = d.id('some-input').r,
+cached_item2 = d.id('other-input').r;
+
+d.set(cached_item).attr('readonly', true)
+d.set(cached_item2).attr('readonly', true)
+
+```
+- [index](#documentation)
+
 # create
 domscript was designed for query/manipulation.
 It has a basic create function but domscript's sister lib clonecript
-is a much better alternative.
+is a much better alternative and designed to work alongside domscript.
 
 clonescript was made for creation and not query/manipulation
 ![clonescript](https://github.com/angeal185/clonescript)
