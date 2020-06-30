@@ -73,7 +73,7 @@ you should get the same results and errors as though you were writting vanilla j
 
 * all prototype methods are optional
 * custom methods can be easily be built into the prototype chain
-* current maximum build size of 2.6kb minified
+* current maximum build size of 3.1kb minified
 * no regex/unsafe functions
 * about as close to using vanilla js speed as it gets.
 
