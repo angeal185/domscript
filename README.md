@@ -1038,7 +1038,7 @@ It has a basic create function but domscript's sister lib clonecript
 is a much better alternative and designed to work alongside domscript.
 
 clonescript was made for creation and not query/manipulation
-![clonescript](https://github.com/angeal185/clonescript)
+[clonescript](https://github.com/angeal185/clonescript)
 
 examples:
 ```js
