@@ -182,7 +182,7 @@ console.timeEnd('domscript');
 
 your end results should always have domscript running similar speed
 to native js. the lower the amount of methods included in the domscript prototype,
-the faster closer it should be. if you don't use it, exclude it.
+the faster and closer it should be. if you don't use it, exclude it.
 
 - [index](#documentation)
 
