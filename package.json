@@ -1,5 +1,5 @@
 {
-  "name": "dom_script",
+  "name": "@angeal185/domscript",
   "version": "1.0.0",
   "description": "A lightning fast dom query and manipulation lib for when speed matters",
   "main": "lib/index.js",
