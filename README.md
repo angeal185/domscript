@@ -84,7 +84,7 @@ npm
 stable release
 
 ```sh
-$ npm install dom-script --save
+$ npm install domScript --save
 ```
 
 dev release
@@ -1055,8 +1055,8 @@ d.id('test-id').append(item);
 
 
 [cd-img]: https://app.codacy.com/project/badge/Grade/01f54b0639df463f9526edb892b5e4ff
-[npm-img]: https://badgen.net/npm/v/dom-script?style=flat-square
+[npm-img]: https://badgen.net/npm/v/domScript?style=flat-square
 [dep-img]:https://badgen.net/david/dep/angeal185/domscript?style=flat-square
-[sz-img]:https://badgen.net/packagephobia/publish/dom-script?style=flat-square
+[sz-img]:https://badgen.net/packagephobia/publish/domScript?style=flat-square
 [lic-img]: https://badgen.net/github/license/angeal185/domscript?style=flat-square
-[npm-url]: https://npmjs.org/package/dom-script
+[npm-url]: https://npmjs.org/package/domScript
