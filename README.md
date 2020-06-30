@@ -50,12 +50,14 @@
 - [off](#off)
 - [addEvt](#addEvt)
 - [rmEvt](#rmEvt)
-- [create](#create)
 - [css](#css)
 - [click](#click)
 - [submit](#submit)
 - [focus](#focus)
 - [blur](#blur)
+- [cb](#cb)
+- [set](#set)
+- [create](#create)
 
 # about
 
