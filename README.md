@@ -45,12 +45,12 @@
 - [txt](#txt)
 - [each](#each)
 - [filter](#filter)
-- [eq](#eq)
 - [on](#on)
 - [off](#off)
 - [addEvt](#addEvt)
 - [rmEvt](#rmEvt)
 - [css](#css)
+- [eq](#eq)
 - [click](#click)
 - [submit](#submit)
 - [focus](#focus)
@@ -914,6 +914,20 @@ d.id('test-id').css({
   'color': 'red',
   'font-size': '96px'
 });
+
+```
+- [index](#documentation)
+
+# eq
+select element by index
+
+examples:
+```js
+
+
+d.class('test-class', 0).txt('index 0')
+// or
+d.class('test-class').eq(1).txt('index 1')
 
 ```
 - [index](#documentation)

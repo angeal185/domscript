@@ -41,6 +41,7 @@
     "filter": true,
     "on": true,
     "off": true,
+    "eq": true,
     "addEvt": true,
     "rmEvt": true,
     "css": true,
