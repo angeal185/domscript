@@ -14,7 +14,7 @@
     "type": "git",
     "url": "git+https://github.com/angeal185/domscript.git"
   },
-  "keywords": [],
+  "keywords": ["javascript", "dom", "dom-manipulation", "dom-querying"],
   "author": "ben eaves",
   "license": "MIT",
   "bugs": {
